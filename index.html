@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태국 여행 유틸리티 - 메인</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"> <!-- NanumSquare 폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> <!-- Montserrat 폰트 -->
+</head>
+<body>
+    <div class="container">
+        <h1>태국 여행 유틸리티</h1>
+
+        <!-- 시계 섹션 -->
+        <div class="clock-container">
+            <div id="clock-widget-korea" class="clock-widget">
+                <h3>한국 시간</h3>
+                <iframe scrolling="no" frameborder="no" style="overflow:hidden;border:0;margin:0;padding:0;width:227px;height:75px;" src="https://www.clocklink.com/html5embed.php?clock=008&timezone=KoreaRepublicof_Seoul&color=black&size=227"></iframe>
+            </div>
+
+            <div id="clock-widget-thailand" class="clock-widget">
+                <h3>태국 현지 시간</h3>
+                <iframe scrolling="no" frameborder="no" style="overflow:hidden;border:0;margin:0;padding:0;width:227px;height:75px;" src="https://www.clocklink.com/html5embed.php?clock=008&timezone=Thailand_Bangkok&color=black&size=227"></iframe>
+            </div>
+        </div>
+
+        <!-- 버튼으로 다른 페이지로 이동 -->
+        <div class="tab-container">
+            <button class="tab-button" onclick="window.location.href='currency.html'">환율 계산기</button>
+            <button class="tab-button" onclick="window.location.href='weather.html'">날씨 확인</button>
+            <button class="tab-button" onclick="window.location.href='emergency.html'">비상 연락처</button>
+        <div class = "footer">
+            <footer>
+                made by JH
+            </footer>
+        </div>
+            <style>
+                footer {
+                    margin-top: 10px;
+                }
+            </style>
+        </div>
+    </div>
+</body>
+</html>

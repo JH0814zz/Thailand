@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태국 여행 유틸리티 - 환율 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>환율 계산기</h1>
+
+        <div class="rate-container">
+            <div class="rate-box">
+                <h2>달러 환율</h2>
+                <h3 id="usd-rate-value">Loading...</h3>
+                <div>
+                    <label for="usd-input">달러 입력 (USD):</label>
+                    <input type="number" id="usd-input" placeholder="USD 입력">
+                    <button onclick="convertFromUSD()">확인</button>
+                    <h4 id="usd-to-krw">원화: --</h4>
+                    <h4 id="usd-to-thb">바트: --</h4>
+                </div>
+            </div>
+
+            <div class="rate-box">
+                <h2>바트 환율</h2>
+                <h3 id="thb-rate-value">Loading...</h3>
+                <div>
+                    <label for="thb-input">바트 입력 (THB):</label>
+                    <input type="number" id="thb-input" placeholder="THB 입력">
+                    <button onclick="convertToKRW()">확인</button>
+                    <h4 id="thb-to-krw">원화: --</h4>
+                    <h4 id="thb-to-usd">달러: --</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 페이지로 돌아가는 버튼 -->
+        <button onclick="window.location.href='index.html'">메인 페이지로 돌아가기</button>
+        <div class = "footer">
+            <footer>
+                made by JH
+            </footer>
+        </div>
+            <style>
+                footer {
+                    margin-top: 10px;
+                }
+            </style>
+    </div>
+</body>
+</html>
